@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="534.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.syspasteleriadulcesitofx.control.DetallesVentasController">
+    <children>
+        <TableView fx:id="tableSale" prefHeight="496.0" prefWidth="799.0">
+            <columns>
+                <TableColumn fx:id="colNro" prefWidth="70.0" sortable="false" style="-fx-alignment: CENTER;" text="N°" />
+                <TableColumn fx:id="colCod" prefWidth="67.0" sortable="false" style="-fx-alignment: CENTER;" text="ID" />
+                <TableColumn fx:id="colProduct" prefWidth="287.0" sortable="false" style="-fx-alignment: CENTER;" text="PRODUCTO" />
+                <TableColumn fx:id="colQuantity" minWidth="0.0" prefWidth="142.0" style="-fx-alignment: CENTER;" text="CANTIDAD" />
+                <TableColumn fx:id="colPrice" prefWidth="138.0" style="-fx-alignment: CENTER;" text="PRECIO UNITARIO" />
+                <TableColumn fx:id="colTotal" prefWidth="94.0" style="-fx-alignment: CENTER;" text="TOTAL" />
+            </columns>
+        </TableView>
+        <TextField fx:id="totalSale" editable="false" layoutX="693.0" layoutY="501.0" prefHeight="25.0" prefWidth="91.0" />
+        <Label layoutX="619.0" layoutY="504.0" text="TOTAL" wrapText="true" />
+    </children>
+</AnchorPane>

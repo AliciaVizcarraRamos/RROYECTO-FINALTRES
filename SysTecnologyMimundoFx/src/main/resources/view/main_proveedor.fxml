@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="esclavo" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="612.0" prefWidth="850.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.syspasteleriadulcesitofx.control.ProveedorController">
+    <children>
+      <ImageView fitHeight="627.0" fitWidth="849.0" layoutX="14.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/WhatsApp%20Image%202024-11-23%20at%208.28.15%20PM.jpeg" />
+         </image>
+      </ImageView>
+        <VBox layoutX="14.0" layoutY="14.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <children>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </AnchorPane>
+                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                    <children>
+                        <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="375.0" prefWidth="430.0">
+                            <children>
+                        <AnchorPane layoutX="105.0" layoutY="85.0" prefHeight="235.0" prefWidth="407.0" style="-fx-background-color: #ffffff;">
+                           <children>
+                                      <GridPane layoutX="6.0" layoutY="9.0" prefHeight="218.0" prefWidth="394.0" style="-fx-padding: 10px; -fx-background-color: #ffffff; -fx-border-color: #ffffff;" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="9.0">
+                                          <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          </columnConstraints>
+                                          <rowConstraints>
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints />
+                                              <RowConstraints />
+                                              <RowConstraints />
+                                              <RowConstraints />
+                                    <RowConstraints />
+                                          </rowConstraints>
+                                          <children>
+                                              <Label maxWidth="1.7976931348623157E308" style="-fx-alignment: center; -fx-text-fill: #AF601A;" text="Formulario de Proveedor" GridPane.columnSpan="2147483647">
+                                                  <font>
+                                                      <Font name="System Bold" size="20.0" />
+                                                     </font>
+                                              </Label>
+                                              <Label style="-fx-text-fill: #6C3483;" text="Nombre del Proveedor:" GridPane.rowIndex="1" />
+                                              <Label style="-fx-text-fill: #6C3483;" text="RUC:" GridPane.rowIndex="2" />
+                                              <Label style="-fx-text-fill: #6C3483;" text="Teléfono:" GridPane.rowIndex="3" />
+                                              <Label style="-fx-text-fill: #6C3483;" text="Dirección:" GridPane.rowIndex="4" />
+                                              <Label style="-fx-text-fill: #6C3483;" text="Correo Electrónico:" GridPane.rowIndex="5" />
+                        
+                                              <TextField fx:id="txtNombreProveedor" prefHeight="26.0" prefWidth="280.0" style="-fx-background-color: #FFFF; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                                              <TextField fx:id="txtDniRuc" style="-fx-background-color: #FFFF; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                              <TextField fx:id="txtCelular" style="-fx-background-color: #FFFF; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                              <TextField fx:id="txtEmail" style="-fx-background-color: #FFFF; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+                        
+                        
+                                              <Label fx:id="lbnMsg" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-text-fill: #D35400;" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" />
+                                              <TextField fx:id="txtDireccion" layoutX="115.0" layoutY="48.0" style="-fx-background-color: #FFFF; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Button mnemonicParsing="false" onAction="#validarFormulario" text="Guardar" GridPane.rowIndex="8" />
+                                    <Button mnemonicParsing="false" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          </children>
+                                           </GridPane>
+                           </children></AnchorPane>
+                              <Label layoutX="60.0" layoutY="14.0" style="-fx-text-fill: #D35400;" text="GESTIONAR PROVEERDOR" textFill="#ff9d7a">
+                                  <font>
+                                      <Font name="System Bold" size="18.0" />
+                                  </font>
+                              </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="390.0" prefWidth="258.0">
+                            <children>
+                                <TableView fx:id="tabla" layoutX="47.0" layoutY="96.0" maxWidth="1.7976931348623157E308" prefHeight="330.0" prefWidth="248.0" style="-fx-background-color: #F6DDCC; -fx-border-color: #D35400;" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="-36.60000000000002" AnchorPane.topAnchor="96.0" />
+                              <TextField fx:id="Filt" layoutX="47.0" layoutY="59.0" style="-fx-background-color: #F6DDCC; -fx-border-color: #D35400;" />
+                              <Label layoutX="47.0" layoutY="7.0" prefHeight="42.0" prefWidth="205.0" style="-fx-background-color: ; -fx-background-color: ; -fx-text-fill: #ffffff;" text="Filtrar Registro:" textFill="WHITE">
+                           <font>
+                              <Font name="Bodoni MT Black" size="24.0" />
+                           </font></Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
